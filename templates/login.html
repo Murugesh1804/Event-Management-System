@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html><script></script>
+<head>
+  <meta charset="utf-8" />
+   <link rel="shortcut icon" type="image/jpg"  href="./templates/static/images/sailboat.png"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <title>login</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins%3A500"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A500"/>
+  <link rel="stylesheet" href="./styles/login.css"/>
+</head>
+<style>
+  
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 144rem;
+}.login-p4o {
+  width: 100%;
+  height: 102.4rem;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+.login-p4o .login-wQK {
+  width: 50rem;
+  height: 56.4rem;
+  position: absolute;
+  left: 50rem;
+  top: 21.2rem;
+  border: solid 0.4rem #ff9900;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-radius: 2.5rem;
+  
+}
+.login-p4o .log-1-FR1 {
+  width: 9.9rem;
+  height: 9.9rem;
+  position: absolute;
+  left: 70rem;
+  top: 26.4rem;
+  object-fit: cover;
+  vertical-align: top;
+  border-radius: 10rem;
+}
+.login-p4o .uname-B3m {
+  width: 45.4rem;
+  height: 6.8rem;
+  position: absolute;
+  left: 52.3rem;
+  top: 39.5rem;
+  border: solid 0.1rem #ff9900;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-radius: 1.5rem;
+  padding: 10px;
+  border: 2px solid #ff9900;
+  font-size: 25px;
+  color: #000000;
+  outline: none;
+}
+.login-p4o .uname-B3m::placeholder{
+  font-size: 20px;
+}
+.login-p4o .pwd-HsV {
+  width: 45.4rem;
+  height: 6.8rem;
+  position: absolute;
+  left: 52.3rem;
+  top: 49.5rem;
+  border: solid 0.1rem #ff9900;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-radius: 1.5rem;
+  padding: 10px;
+  border: 2px solid #ff9900;
+  font-size: 25px;
+  color: #000000;
+  outline: none;
+}
+.login-p4o .pwd-HsV::placeholder{
+  font-size: 20px;
+}
+.login-p4o .login-but-cPy {
+  width: 45.4rem;
+  height: 6.8rem;
+  position: absolute;
+  left: 52.3rem;
+  top: 61.1rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #ffffff;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff9900;
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
+.login-p4o .login-but-cPy:hover{
+  background-color: #ffffff;
+  color: #ff9900;
+  border: solid 0.3rem #ff9900;
+}
+.login-p4o .signup-nav-J1u {
+  width: 23.6rem;
+  height: 2.3rem;
+  position: absolute;
+  left: 62.9rem;
+  top: 71.1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #000000;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: baseline;
+}
+.login-p4o .signup-nav-J1u .signup-nav-J1u-sub-0 {
+}
+.login-p4o .signup-nav-J1u .signup-nav-J1u-sub-1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #ff9900;
+  font-family: Poppins, 'Source Sans Pro';
+}
+.login-p4o .eye-1-3No {
+  width: 3.2rem;
+  height: 3.2rem;
+  position: absolute;
+  left: 91.5rem;
+  top: 51.3rem;
+  object-fit: cover;
+  vertical-align: top;
+}
+
+</style>
+<body>
+  <form method="POST" action="/login">
+
+<div class="login-p4o">
+  <div class="login-wQK">
+  </div>
+  <img class="log-1-FR1" src="./templates/static/images/log-1-ahd.png"/>
+  <input type="text" placeholder="Username" id="uname" name="uname" class="uname-B3m">
+</input>
+  <input type="password" placeholder="Password" id="pwd" name="pwd" class="pwd-HsV">
+</input>
+  <button value="submit" class="login-but-cPy">Login</button>
+  <p class="signup-nav-J1u">
+    <span class="signup-nav-J1u-sub-0">don’t have an account? </span>
+    <a href="signup.html" class="signup-nav-J1u-sub-1">SignUp</a>
+  </p>
+  <img onclick="view()" class="eye-1-3No" src="./templates/static/images/eye-1-kjH.png"/>
+</div>
+</form>
+</body>
+<script>
+  function view(){
+    var x = document.getElementById("pwd");
+  if (x.type === "password") {
+    x.type = "text";
+  }else{
+    x.type = "password";
+  } 
+  }
+</script>
